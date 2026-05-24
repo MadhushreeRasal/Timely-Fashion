@@ -1,0 +1,283 @@
+body{
+	margin:0;
+	background-color:#341257;
+	text-align:center;
+	color:#342157;
+	scroll-behaviour:smooth;
+}
+.nav{
+	padding:0;
+	grid-area:nav;
+	position:fixed;
+	top:0;
+	width:96%;
+	height:50px;
+	z-index:2;
+	color:gold;
+}
+h1{
+	margin:0;
+	color:#341257;
+}
+h2{
+	background-color:#342157;
+	color:gold;
+}
+.heading{
+	width:100%;
+}
+.poster{
+	width:97%;
+	grid-area:poster;
+	display:flex;
+	margin:3.8% 0 0 0;
+}
+.menu{
+	position:sticky;
+	top:9.2%;
+	width:99.2%;
+	padding:0%;
+	font-size:18px;
+}
+.more{
+	margin-top:-0%;
+	padding:1.5%;
+}
+.more:hover{
+	background-color:#341257;
+	color:gold;
+	font-size:18px;
+	font-weight:bold;
+}
+.navigation_bar{
+	width:100%;
+	height:40px;
+	padding:0;
+	margin:0;
+	background-color:snow;
+	display:flex;
+	justify-content:space-evenly;
+}
+.product{
+	grid-area:main;
+	padding:0;
+	width:97%;
+	padding:0 5%;
+	font-size:19px;
+}
+.list{
+	text-align:left;
+}
+.watch{
+	width:75%;
+	padding:2.5%;
+	margin:3% auto;
+}
+.gallery{
+	display:flex;
+	width:100%;
+	padding:3%;
+	height:340px;
+	flex-wrap:wrap;
+	justify-content:space-evenly;
+	background-color:#342157;
+	border:4px solid gold;
+	border-radius:0 25px 0 25px;
+	box-shadow:15px 15px 15px #342157;
+}
+.photo{
+	width:110px;
+	height:110px;
+	margin:1%;
+	border-radius:8px;
+	border:2px solid gold;
+	box-shadow:3px 3px 5px gold;
+}
+.photo:hover{
+	width:200px;
+	height:200px;
+	border-radius:10px;
+	border:2px solid #342157;
+	box-shadow:7px 7px 10px gold;
+}
+.cart{
+	margin:1% auto 5% auto;
+	padding:2% 5%;
+	font-size:20px;
+	font-weight:bold;
+	background-color:#342157;
+	border:2px solid gold;
+	color:gold;
+	border-radius:0 25px 0 25px;
+}
+.cart:hover{
+	background-color:gold;
+	color:#342157;
+	font-size:22px;
+	border:2px solid #342157;
+	box-shadow:10px 10px 10px #342157;
+}
+.reviews{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-evenly;
+	font-size:18px;
+}
+.title{
+	font-size:24px;
+	background-color:#342157;
+	color:gold;
+	font-style:italic;
+	width:60%;
+	margin:auto;
+}
+.pp{
+	width:40px;
+	height:40px;
+	border-radius:50%;
+	border:2px solid #342157;
+	margin:-3% -20% 1% 25%;
+}
+.class{
+	border:2px solid gold;
+	border-radius:0 25px 0 25px;
+	box-shadow:7px 7px 7px #342157;
+}
+.profile{
+	grid-area:pfp;
+}
+figcaption{
+	font-weight:bold;
+}
+.pic{
+	width:50%;
+	border-radius:50%;
+	border:2px solid #342157;
+}
+.hover:hover{
+	font-weight:bold;
+	text-shadow:5px 2px 5px gold;
+}
+.my_acc{
+	font-size:20px;
+}
+.acc{
+	border-radius:0 20px 0 20px;
+	border:2px solid gold;
+	padding:10px 20px;
+	background-color:#342157;
+	color:gold;
+	font-weight:bold;
+}
+.submit{
+	border-radius:0 20px 0 20px;
+	border:2px solid #342157;
+	padding:10px 20px;
+	background-color:gold;
+	color:#342157;
+	font-weight:bold;
+	margin:2%;
+}
+.acc:hover{
+	background-color:gold;
+	color:#342157;
+	padding:15px 25px;
+	border:2px solid #342157;
+	box-shadow:5px 5px 5px #342157;
+}
+.popular{
+	grid-area:popular;	
+}
+footer{
+	grid-area:footer;
+	width:97.5%;
+}
+.grid-container{
+	display:grid;
+	grid-template-areas:
+	'nav nav nav nav nav nav nav' 
+	'poster poster poster poster poster poster poster'
+	'pfp pfp main main main main main'
+	'popular popular main main main main main'
+	'popular popular main main main main main'
+	'footer footer footer footer footer footer footer';
+	gap:10px;
+	background-color:#341257;
+	padding:1.5%;
+	margin:auto;
+}
+nav, .poster, 
+.product, .reviews, .profile, 
+.popular, footer{
+	background-color:snow;
+	border:4px solid gold;
+	border-radius:10px;
+	padding:0%;
+}
+.img{
+	height:250px;
+	border-radius:8px;
+	margin:15px;
+	border:4px solid gold;
+	box-shadow:7px 10px 7px #342157;
+}
+.card{
+	width:80%;
+	border-radius:8px;
+	margin:5% auto;
+	border:4px solid gold;
+	box-shadow:7px 10px 7px #342157;
+	padding:3% 0;
+}
+.card:hover{
+	width:88%;
+	box-shadow:7px 10px 7px #342157, -7px -10px 7px #342157;
+	margin:7% auto;
+	background: #f7beec;
+	background: linear-gradient(0deg, rgba(247, 190, 236, 1) 0%, rgba(122, 14, 237, 1) 81%);
+}
+.item{
+	width:90%;
+	border:2px solid gold;
+	border-radius:8px;
+}
+.comment{
+	width:41%;
+	height:250px;
+	padding:2%;
+	border:2px solid #342157;
+	border-radius:8px;
+	margin:1%;
+}
+.comment2{
+	width:41%;
+	padding:2%;
+	border:2px solid #342157;
+	border-radius:8px;
+	margin:1%;
+}
+.feedback_form{
+	width:300px;
+	height:350px;
+	padding:4%;
+	border:2px solid gold;
+	background-color:#342157;
+	color:gold;
+	margin:auto;
+}
+.text{
+	width:85%;
+	height:50px;
+	margin:2%;
+	background-color:snow;
+}
+.felipa-regular {
+  font-family: "Felipa", serif;
+  font-weight:bold;
+  font-style: normal;
+  font-size:45px;
+}
+::selection{
+	background-color:#342157;
+	color:gold;
+}
